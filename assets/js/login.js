@@ -24,6 +24,7 @@ $(function () {
             if (pwd !== value) {
                 return '两次密码不一致'
             }
+
         }
 
     })
