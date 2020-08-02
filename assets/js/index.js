@@ -24,7 +24,7 @@ function getUserInfo() {
         //配置请求头调整到baseApi中
         success: function (res) {
             // 验证是否可以正确的响应
-            console.log(res);
+            // console.log(res);
             if (res.status !== 0) {
                 return layer.msg('获取数据失败')
             }
