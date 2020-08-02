@@ -4,15 +4,16 @@ $(function () {
     var layer = layui.layer
 
     // 设置退出功能：先将a标签设置 阻止跳转
-    $('#btnLogout').on('click', function () {
-        console.log(ok);
-        layer.confirm('确定退出登陆', { icon: 3, title: '提示' }, function (index) {
+    $('#btnLogOut').on('click', function () {
+
+        // 使用layui设置退出窗口
+        layer.confirm('确定退出？', { icon: 3, title: '提示' }, function (index) {
             //do something
-            // 1. 清空本地的token
-            localStorage.removeItem('token')
-            // 2. 跳转到登陆页面
+            // 1. 将本地存储的token 删除掉
+            localStorage.removeItem('token');
+            // 2. 将页面跳转到登陆页面
             location.href = '/login.html'
-            // 关闭弹出的窗口
+            // 下面这个是关闭退出的弹出窗口
             layer.close(index);
         });
     })
