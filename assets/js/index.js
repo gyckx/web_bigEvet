@@ -5,6 +5,7 @@ $(function () {
 
     // 设置退出功能：先将a标签设置 阻止跳转
     $('#btnLogout').on('click', function () {
+        console.log(ok);
         layer.confirm('确定退出登陆', { icon: 3, title: '提示' }, function (index) {
             //do something
             // 1. 清空本地的token

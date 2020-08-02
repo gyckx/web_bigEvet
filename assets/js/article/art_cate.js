@@ -87,9 +87,6 @@ $(function () {
 
     })
 
-
-
-
     // 给删除按钮设置事件 完成功能
     $('tbody').on('click', '.btn-delete', function () {
         // 获取对应的id的值
