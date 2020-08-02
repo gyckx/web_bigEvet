@@ -11,7 +11,7 @@ $.ajaxPrefilter(function (options) {
     }
     // 全局挂载complete 对后台访问进行拦截
     options.complete = function (res) {
-        console.log(res);
+        // console.log(res);
         // 在 complete函数中可以用 res.responseJSON 获取响应信息
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败!') {
 
