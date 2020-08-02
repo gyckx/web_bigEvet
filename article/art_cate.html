@@ -43,6 +43,26 @@
 
         </div>
     </div>
+    <script type="text/html" id="tpl-table">
+        {{each data}}
+        <tr>
+            <td>{{$value.name}}</td>
+            <td>{{$value.alias}}</td>
+            <td>
+                <button type="button" class="layui-btn layui-btn-xs">编辑</button>
+                <button type="button" class="layui-btn layui-btn-xs layui-btn-danger">删除</button>
+
+            </td>
+        </tr>
+
+        {{/each}}
+
+
+
+
+    </script>
+
+
     <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 引入jq -->
     <script src="/assets/lib/jquery.js"></script>
@@ -50,7 +70,8 @@
     <script src="/assets/js/baseAPi.js"></script>
     <!-- 引入自己的js文件 -->
     <script src="/assets/js/article/art_cate.js"></script>
-
+    <!-- 引入模版引擎 -->
+    <script src="/assets/lib/template-web.js"></script>
 </body>
 
 </html>
